@@ -121,3 +121,15 @@ def convertCancellationPolicy(cancellation_policy):
         return 2
     elif cancellation_policy == 'super strict':
         return 3
+
+def predictPrice(neighbourhood,property_type,room_type,accommodates,bedrooms,bathrooms,beds,bed_type,availability_365,cancellation_policy):
+    regressor = loadModel()
+
+    neighbourhood = convertNeighbourhood(neighbourhood)
+    property_type = convertPropertyType(property_type)
+    room_type = convertRoomType(room_type)
+    bed_type = convertBedType(bed_type)
+    cancellation_policy = convertCancellationPolicy(cancellation_policy)
+
+    prediction = regressor.predict([[neighbourhood,property_type,room_type,accommodates,bathrooms,bedrooms,beds,bed_type,availability_365,cancellation_policy]])
+    return prediction 
