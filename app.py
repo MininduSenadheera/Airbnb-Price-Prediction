@@ -171,7 +171,7 @@ def main():
 
     with col3:
         
-        image = Image.open('./public/airbnb.png')
+        image = Image.open('./images/airbnb.png')
         st.image(image, width=250)
 
         st.markdown(
