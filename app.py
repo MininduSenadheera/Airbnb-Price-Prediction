@@ -111,3 +111,13 @@ def convertBedType(bed_type):
         return 3
     elif bed_type == 'Real Bed':
         return 4
+
+def convertCancellationPolicy(cancellation_policy):
+    if cancellation_policy == 'flexible':
+        return 0
+    elif cancellation_policy == 'moderate':
+        return 1
+    elif cancellation_policy == 'strict':
+        return 2
+    elif cancellation_policy == 'super strict':
+        return 3
