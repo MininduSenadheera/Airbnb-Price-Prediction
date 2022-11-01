@@ -1,3 +1,6 @@
 Pillow
 streamlit
 pickle4
+sklearn
+pandas
+numpy
