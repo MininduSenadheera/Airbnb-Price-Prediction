@@ -99,3 +99,15 @@ def convertRoomType(room_type):
         return 1
     elif room_type == 'Shared room':
         return 2
+
+def convertBedType(bed_type):
+    if bed_type == 'Airbed':
+        return 0
+    elif bed_type == 'Couch':
+        return 1
+    elif bed_type == 'Futon':
+        return 2
+    elif bed_type == 'Pull-out Sofa':
+        return 3
+    elif bed_type == 'Real Bed':
+        return 4
