@@ -65,3 +65,29 @@ def convertNeighbourhood(neighbourhood):
         return 28
     elif neighbourhood == 'West Roxbury':
         return 29
+
+def convertPropertyType(property_type):
+    if property_type == 'Apartment':
+        return 0
+    elif property_type == 'Bed & Breakfast':
+        return 1
+    elif property_type == 'Boat':
+        return 2
+    elif property_type == 'Condominium':
+        return 3
+    elif property_type == 'Dorm':
+        return 4
+    elif property_type == 'Entire Floor':
+        return 5
+    elif property_type == 'Guest house':
+        return 6
+    elif property_type == 'House':
+        return 7
+    elif property_type == 'Loft':
+        return 8
+    elif property_type == 'Other':
+        return 9
+    elif property_type == 'Town house':
+        return 10
+    elif property_type == 'Villa':
+        return 11
