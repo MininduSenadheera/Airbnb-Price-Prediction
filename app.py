@@ -91,3 +91,11 @@ def convertPropertyType(property_type):
         return 10
     elif property_type == 'Villa':
         return 11
+
+def convertRoomType(room_type):
+    if room_type == 'Entire home/apt':
+        return 0
+    elif room_type == 'Private room':
+        return 1
+    elif room_type == 'Shared room':
+        return 2
